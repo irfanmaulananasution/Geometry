@@ -10,9 +10,9 @@ public class Line {
     }
 
     public double length() {
-        int dx = x1-x2;
-        int dy = y1-y2;
-        double length = (double) Math.abs(dx - dy);
+        double dx = (double) x1 - x2;
+        double dy = (double) y1 - y2;
+        double length = Math.sqrt((dx * dx) + (dy * dy));
         return length;
     }
 }

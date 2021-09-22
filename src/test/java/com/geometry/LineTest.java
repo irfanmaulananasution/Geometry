@@ -19,4 +19,11 @@ public class LineTest {
         double length = line.length();
         assertEquals(5, length);
     }
+
+    @Test
+    void lengthCalculateAccuratelyForDiagonalLine() {
+        Line line = new Line(0, 0, 3, 4);
+        double length = line.length();
+        assertEquals(5, length);
+    }
 }
