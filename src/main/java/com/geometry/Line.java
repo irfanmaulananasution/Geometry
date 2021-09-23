@@ -10,6 +10,6 @@ public class Line {
     }
 
     public double getLength() {
-        return y2 - y1;
+        return Math.abs(y2 - y1);
     }
 }
