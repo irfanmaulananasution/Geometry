@@ -40,4 +40,11 @@ public class LineTest {
         double length = line.length();
         assertEquals(4, length);
     }
+
+    @Test
+    void pointsWithNoZeroShouldReturnCorrectLength() {
+        Line line = new Line(6, 1, 1, 1);
+        double length = line.length();
+        assertEquals(5, length);
+    }
 }
