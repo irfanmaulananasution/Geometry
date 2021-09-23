@@ -16,4 +16,8 @@ public class Line {
     public double getLength() {
         return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
     }
+
+    public boolean isEqual(Line other) {
+        return false;
+    }
 }
