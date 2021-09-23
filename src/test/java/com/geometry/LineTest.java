@@ -12,4 +12,11 @@ public class LineTest {
         double length = line.length();
         assertEquals(0, length);
     }
+
+    @Test
+    void verticalLineShouldReturnCorrectLength() {
+        Line line = new Line(0, 0, 0, 1);
+        double length = line.length();
+        assertEquals(1, length);
+    }
 }
