@@ -47,4 +47,11 @@ public class LineTest {
         double length = line.length();
         assertEquals(5, length);
     }
+
+    @Test
+    void diagonalLineShouldReturnCorrectLength() {
+        Line line = new Line(1, 2, 7, 10);
+        double length = line.length();
+        assertEquals(10, length);
+    }
 }

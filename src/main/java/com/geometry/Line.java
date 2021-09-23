@@ -14,6 +14,8 @@ public class Line {
     }
 
     public double length() {
-        return Math.abs((x1 - x2) + (y1 - y2));
+        int dx = x1 - x2;
+        int dy = y1 - y2;
+        return Math.sqrt((dx * dx) + (dy * dy));
     }
 }
