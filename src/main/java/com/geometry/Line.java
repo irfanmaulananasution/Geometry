@@ -18,6 +18,9 @@ public class Line {
     }
 
     public boolean isEqual(Line other) {
+        if (other == null) {
+            return false;
+        }
         return Math.min(x1, x2) == Math.min(other.x1, other.x2)
             && Math.max(x1, x2) == Math.max(other.x1, other.x2)
             && Math.min(y1, y2) == Math.min(other.y1, other.y2)

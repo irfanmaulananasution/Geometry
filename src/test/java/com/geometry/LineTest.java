@@ -72,4 +72,11 @@ public class LineTest {
         boolean actualResult = line1.isEqual(line2);
         assertTrue(actualResult);
     }
+
+    @Test
+    void whenComparedToNullShouldReturnFalse() {
+        Line line1 = new Line(1, 2, 3, 4);
+        boolean actualResult = line1.isEqual(null);
+        assertFalse(actualResult);
+    }
 }
