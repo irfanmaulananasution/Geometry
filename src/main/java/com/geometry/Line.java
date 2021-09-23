@@ -14,6 +14,6 @@ public class Line {
     }
 
     public double length() {
-        return y2;
+        return Math.abs(x1 - y2);
     }
 }
