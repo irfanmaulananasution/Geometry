@@ -18,9 +18,9 @@ public class Line {
     }
 
     public boolean isEqual(Line other) {
-        return x1 == other.x1
-            && x2 == other.x2
-            && y1 == other.y1
-            && y2 == other.y2;
+        return Math.min(x1, x2) == Math.min(other.x1, other.x2)
+            && Math.max(x1, x2) == Math.max(other.x1, other.x2)
+            && Math.min(y1, y2) == Math.min(other.y1, other.y2)
+            && Math.max(y1, y2) == Math.max(other.y1, other.y2);
     }
 }

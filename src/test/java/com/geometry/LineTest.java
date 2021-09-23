@@ -64,4 +64,12 @@ public class LineTest {
         boolean actualResult = line1.isEqual(line2);
         assertTrue(actualResult);
     }
+
+    @Test
+    void whenAllEndPointsAreTheSameButAreSwitchedShouldReturnTrue() {
+        Line line1 = new Line(1, 2, 3, 4);
+        Line line2 = new Line(3, 4, 1, 2);
+        boolean actualResult = line1.isEqual(line2);
+        assertTrue(actualResult);
+    }
 }
