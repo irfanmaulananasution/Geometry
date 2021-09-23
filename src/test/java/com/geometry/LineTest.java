@@ -14,7 +14,7 @@ public class LineTest {
     }
 
     @Test
-    void verticalLineShouldReturnCorrectLength() {
+    void verticalLineModeledFromSecondPointsShouldReturnCorrectLength() {
         Line line = new Line(0, 0, 0, 1);
         double length = line.length();
         assertEquals(1, length);
@@ -25,5 +25,12 @@ public class LineTest {
         Line line = new Line(2, 0, 0, 0);
         double length = line.length();
         assertEquals(2, length);
+    }
+
+    @Test
+    void verticalLineModeledFromFirstPointsShouldReturnCorrectLength() {
+        Line line = new Line(0, 3, 0, 0);
+        double length = line.length();
+        assertEquals(3, length);
     }
 }
