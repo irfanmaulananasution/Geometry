@@ -20,4 +20,11 @@ public class LineTest {
         double length = line.getLength();
         assertEquals(1, length, EPS);
     }
+
+    @Test
+    void sameXAxisShouldReturnCorrectLength() {
+        Line line = new Line(0, 4, 0, 2);
+        double length = line.getLength();
+        assertEquals(2, length, EPS);
+    }
 }
