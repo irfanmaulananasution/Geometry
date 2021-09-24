@@ -34,4 +34,11 @@ public class LineTest {
         double length = line.getLength();
         assertEquals(3, length, EPS);
     }
+
+    @Test
+    void sameYAxisShouldReturnCorrectLength() {
+        Line line = new Line(5, 0, 1, 0);
+        double length = line.getLength();
+        assertEquals(4, length, EPS);
+    }
 }
