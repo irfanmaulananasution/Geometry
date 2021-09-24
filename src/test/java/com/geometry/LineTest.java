@@ -27,4 +27,11 @@ public class LineTest {
         double length = line.getLength();
         assertEquals(2, length, EPS);
     }
+
+    @Test
+    void sameYAxisAndFirstXLessThanSecondXShouldReturnCorrectLength() {
+        Line line = new Line(1, 0, 4, 0);
+        double length = line.getLength();
+        assertEquals(3, length, EPS);
+    }
 }
