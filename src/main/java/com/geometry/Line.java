@@ -15,9 +15,6 @@ public class Line {
 
 
     public double getLength() {
-        if (x1 == x2) {
-            return Math.abs(y2 - y1);
-        }
-        return Math.abs(x2 - x1);
+        return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
     }
 }

@@ -41,4 +41,11 @@ public class LineTest {
         double length = line.getLength();
         assertEquals(4, length, EPS);
     }
+
+    @Test
+    void pointWithNoSameAxisShouldReturnCorrectLength() {
+        Line line = new Line(1, 2, 4, 6);
+        double length = line.getLength();
+        assertEquals(5, length, EPS);
+    }
 }
